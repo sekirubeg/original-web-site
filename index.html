@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="description" content="sample text" />
+    <!-- YakuhanJP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css"
+    />
+    <!-- Sanitize CSS -->
+    <link rel="stylesheet" href="./asset/css/sanitize.css" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body class="no-scroll">
+    <img src="./asset/image/other/pasokon.png" alt="" class="not" />
+    <!-- Loading Screen -->
+    <div id="loading">
+      <img class="spinner" src="./asset/image/other/apple.png" alt="" />
+      <p>ロード中...</p>
+    </div>
+
+    <!-- Page Top Button -->
+    <a class="page_top_btn" href="#" id="page">
+      <img
+        id="page_top"
+        src="./asset/image/other/up.png"
+        alt=""
+        style="width: 400px"
+      />
+    </a>
+
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+      <div class="header-container">
+        <img src="./asset/image/other/logo.png" alt="logo" id="top" />
+      </div>
+    </header>
+
+    <!-- サイドヘッダー -->
+    <div class="side-header DownMove" id="side">
+      <button id="jsbutton" class="closebutton">
+        <span class="closetext">Close ×</span>
+      </button>
+      <div class="side-container">
+        <ul class="nav-list">
+          <li class="nav-link top">
+            <a class="link" href="#top">
+              <p class="t21">トップ</p>
+            </a>
+          </li>
+          <li class="nav-link about">
+            <a class="link" href="#about">
+              <p class="t22">長野県とは</p>
+            </a>
+          </li>
+          <li class="nav-link area-link">
+            <a class="link" href="#area">
+              <p class="t23">エリア紹介</p>
+            </a>
+          </li>
+          <li class="nav-link access-link">
+            <a class="link" href="#access">
+              <p class="t24">アクセス紹介</p>
+            </a>
+          </li>
+          <li class="nav-link photo-link">
+            <a class="link" href="#photo">
+              <p class="t 25">写真紹介</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="sns-list">
+        <li class="sns-link">
+          <a class="slink" href="#">Instagram</a>
+        </li>
+        <li class="sns-link">
+          <a class="slink" href="#">Twitter</a>
+        </li>
+        <li class="sns-link">
+          <a class="slink" href="#">Facebook</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ハンバーガーメニュー -->
+    <div id="HbButton" class="openbtn hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- セクション1: トップ -->
+      <section class="section1">
+        <div class="thumb-logo">
+          <img src="./asset/image/other/logo1.png" alt="" />
+        </div>
+
+        <div class="sliderArea">
+          <!-- サムネイルスライダー -->
+          <div class="slider_thumb slider">
+            <div>
+              <img src="./asset/image/area/matumoto.png" alt="125naroom" />
+            </div>
+            <div>
+              <img
+                src="./asset/image/area/uedasakukaruizawa (1).png"
+                alt="125naroom"
+              />
+            </div>
+            <div>
+              <img src="./asset/image/area/naganoiyama.png" alt="125naroom" />
+            </div>
+            <div>
+              <img src="./asset/image/area/suwaida.png" alt="125naroom" />
+            </div>
+          </div>
+
+          <!-- サムネイル画像 -->
+          <div class="thumb">
+            <div class="thumb-img">
+              <img
+                src="./asset/image/area-circle/matumotojou.png"
+                alt="matumoto"
+              />
+            </div>
+            <div class="thumb-img">
+              <img
+                src="./asset/image/area-circle/karuizawa.png"
+                alt="karuizawa"
+              />
+            </div>
+            <div class="thumb-img">
+              <img src="./asset/image/area-circle/zenkouji.png" alt="nagano" />
+            </div>
+            <div class="thumb-img">
+              <img src="./asset/image/area-circle/takabotti.png" alt="suwa" />
+            </div>
+          </div>
+        </div>
+
+        <div class="iii">
+          <div class="title" id="about">
+            <img src="./asset/image/other/naganokentoha.png" alt="" />
+          </div>
+          <div class="text">
+            <h2>四季が彩る、日本の屋根・長野</h2>
+            <p>
+              本州の中央部に位置する長野県。日本アルプスを擁し、美しい山々に囲まれた自然豊かな地域です。夏は涼しい高原での避暑、冬は世界有数のスキーリゾートが楽しめるなど、四季折々の魅力が詰まっています。また、江戸時代から続く善光寺や、歴史ある松本城などの名所も多く、日本の伝統文化が息づく場所です。さらに、信州そばやりんご、野沢菜漬けなどの郷土料理も豊富で、食の魅力も満載。壮大な自然と歴史、文化、グルメが融合する長野県は、訪れる人々を魅了し続けています。
+            </p>
+            <img
+              class="naganoken"
+              src="./asset/image/other/naganoken.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <a href="#access" class="btn_16">アクセス情報</a>
+        <img class="kugiri" src="./asset/image/other/kugiri.png  " alt="" />
+      </section>
+
+      <!-- セクション2: エリア紹介 -->
+      <div class="area-title">
+        <img src="./asset/image/area/area.png" alt="" id="area" />
+        <h2>
+          各エリアごとのおすすめスポット、アクティビティを掲載しています。
+        </h2>
+        <div class="area4">
+          <button class="button" id="a_btn">
+            <img class="btn" src="./asset/image/area-circle/matsu.png" alt="" />
+          </button>
+          <button class="button" id="b_btn">
+            <img class="btn" src="./asset/image/area-circle/karu.png" alt="" />
+          </button>
+          <button class="button" id="c_btn">
+            <img
+              class="btn"
+              src="./asset/image/area-circle/naga.png"
+              alt=""
+              type="button"
+            />
+          </button>
+          <button class="button" id="d_btn">
+            <img
+              class="btn"
+              src="./asset/image/area-circle/suwa.png"
+              alt=""
+              type="button"
+            />
+          </button>
+        </div>
+      </div>
+      <section class="section2 a-screen">
+        <div class="area-background">
+          <img src="./asset/image/matsumoto/haike.png" alt="" />
+          <div class="area-heading">
+            <img
+              src="./asset/image/matsumoto/moji.png"
+              alt=""
+              class="imga a1"
+            />
+            <img
+              src="./asset/image/karuizawa/moji.png"
+              alt=""
+              class="imgb a2"
+            />
+            <img
+              src="/asset/image/nagano/midasi (1).png"
+              alt=""
+              class="imgc a3"
+            />
+            <img
+              src="/asset/image/suwa/midasi (2).png"
+              alt=""
+              class="imgd a4"
+            />
+          </div>
+          <div class="area-image">
+            <img
+              src="./asset/image/matsumoto/matsumoto.png"
+              alt=""
+              class="imga a1"
+            />
+            <img
+              src="./asset/image/karuizawa/midasi.png"
+              alt=""
+              class="imgb a2"
+            />
+            <img src="./asset/image/nagano/nagano.png" alt="" class="imgc a3" />
+            <img
+              src="./asset/image/suwa/midasi (4).png"
+              alt=""
+              class="imgd a4"
+            />
+          </div>
+        </div>
+
+        <div class="area-explain">
+          <img src="./asset/image/matsumoto/tanken.png" alt="" />
+          <div class="takusan imga a1">
+            <h2>栄えた歴史文化のある城下町</h2>
+            <p>
+              松本市は長野県の中部に位置しており、自然と歴史が豊かに融合した魅力的な都市です。特に松本城はその美しい外観で有名で、観光地としても人気です。市内には温泉や美術館も多く、四季折々の自然が訪れる人々を魅了します。文化的なイベントや地元の食文化も楽しめる場所で、歴史的な街並みを歩きながら、伝統と現代が調和した雰囲気を感じることができます。
+            </p>
+          </div>
+          <div class="takusan imgb a2">
+            <h2>洗練された高原リゾート地</h2>
+            <p>
+              上田市は長野県の東部に位置し、戦国武将・真田幸村ゆかりの地として知られています。佐久市は自然と農業が豊かに広がるエリアで、清らかな水で育った「佐久鯉」や美しい星空が特徴的です。軽井沢は日本を代表する高原リゾート地で、四季折々の美しい自然と洗練された街並みが特徴です。旧軽井沢銀座やアウトレットモールでのショッピング、白糸の滝や雲場池などの自然散策も楽しめ、訪れる人々を魅了します。
+            </p>
+          </div>
+          <div class="takusan imgc a3">
+            <h2>自然と歴史が調和する門前町</h2>
+            <p>
+              長野市は長野県の県庁所在地であり、善光寺をはじめとする歴史的な名所が多く、全国から参拝客が訪れる街です。戸隠エリアでは戸隠そばや神秘的な戸隠神社、冬にはスキーなど四季折々の楽しみ方ができます。飯山市は「雪国の小京都」とも呼ばれ、伝統的な街並みと豊かな自然が魅力のエリアです。冬には日本有数の豪雪地帯として知られ、スキーやスノーボードを楽しむ人々で賑わいます。
+            </p>
+          </div>
+          <div class="takusan imgd a4">
+            <h2>神話と歴史の息づく町</h2>
+            <p>
+              諏訪市は諏訪湖を囲む温泉地として知られ、四季折々の風景が楽しめる観光地です。諏訪大社は日本最古の神社の一つとして歴史が深く、七年に一度開催される「御柱祭」は全国的にも有名です。また、湖畔から望む美しい夕景や、冬の「御神渡り」といった自然現象も見どころです。飯田市は美しい山々に囲まれた自然豊かな地域で、「日本一の星空」とも称される阿智村のナイトツアーが人気です。
+            </p>
+          </div>
+        </div>
+
+        <!-- エリア内の観光スポット -->
+        <div class="area-sight">
+          <img src="./asset/image/matsumoto/spot1.png" alt="" class="spot1" />
+          <img src="./asset/image/matsumoto/spot2.png" alt="" class="spot2" />
+          <img src="./asset/image/matsumoto/spot3.png" alt="" class="spot3" />
+          <div class="sight-title">
+            <img src="./asset/image/matsumoto/kankou.png" alt="" />
+          </div>
+
+          <div class="sight-content imga bb1">
+            <div class="sight1">
+              <img src="./asset/image/matsumoto/kamikouchi.png" alt="" />
+              <h2>{　　上　高　地　　}</h2>
+              <p>
+                上高地（かみこうち）は、日本を代表する自然の楽園のひとつです。北アルプスの雄大な山々に囲まれ、澄み切った空気と手つかずの美しい自然が広がる大正地は、多くの登山者や観光客を魅了しています。上高地のシンボルともいえる大正池は、大正時代の焼岳の噴火によってできた池で、水面に映る山々の景色が幻想的な雰囲気を演出します。
+              </p>
+            </div>
+            <div class="sight2">
+              <img src="./asset/image/matsumoto/matumotojou.png" alt="" />
+              <h2>{　　松　本　城　　}</h2>
+              <p>
+                松本城は、長野県松本市にある日本最古の五重六階の天守を持つ城で、国宝
+                に指定されている名城のひとつです。戦国時代の終わり頃に築かれたこの城は、黒と白のコントラストが美しい外観を持ち、「烏城（からすじょう）」の愛称でも親しまれています。最大の特徴は、その美しい天守閣と、堀に映る壮麗な姿です。
+              </p>
+            </div>
+            <div class="sight3">
+              <img src="./asset/image/matsumoto/utsukusigahara.png" alt="" />
+              <h2>{　　美　ヶ　原　　}</h2>
+              <p>
+                美ヶ原（うつくしがはら）は、長野県の中央部に広がる標高約2,000メートルの高原で、日本百名山のひとつにも数えられる絶景スポットです。その名の通り、四季折々の美しい景観が楽しめることから「美しの原」とも呼ばれ、広大な草原と大パノラマの眺望が訪れる人々を魅了します。美ヶ原の最大の魅力は、その360度の大パノラマです。
+              </p>
+            </div>
+          </div>
+
+          <div class="sight-content imgb bb2">
+            <div class="sight1">
+              <img src="./asset/image/karuizawa/kyoukai.png" alt="" />
+              <h2>{　軽井沢高原協会　}</h2>
+              <p>
+                軽井沢高原教会 は、長野県軽井沢町にある 自然と調和した美しい教会
+                で、四季折々の景観が楽しめる人気の観光スポットです。木々に囲まれた静かな環境の中に建つ教会は、結婚式場としても人気が高く、多くのカップルが誓いを交わす場所として訪れます。特に冬の「軽井沢高原教会
+                クリスマスキャンドルナイト」では、無数のキャンドルが灯され、幻想的な雰囲気に包まれます。
+              </p>
+            </div>
+            <div class="sight2">
+              <img src="./asset/image/karuizawa/siraito.png" alt="" />
+              <h2>{　　白 糸 の 滝　　}</h2>
+              <p>
+                白糸の滝
+                は、長野県軽井沢町にある美しい滝で、高さ3m・幅約70mの半円状に広がる湧水の滝
+                です。一般的な滝のように川の水が落ちるのではなく、地下水が岩肌から無数の細い糸のように流れ落ちることが特徴で、その繊細で幻想的な景観から「白糸の滝」と名付けられました。軽井沢の自然に溶け込んだこの滝は、特に新緑の春や紅葉の秋に美しい風景を楽しめるスポットです。
+              </p>
+            </div>
+            <div class="sight3">
+              <img src="./asset/image/karuizawa/siro.png" alt="" />
+              <h2>{　　上　田　城　　}</h2>
+              <p>
+                上田城（上田城跡公園）
+                は、長野県上田市にある戦国時代の名城で、真田昌幸が築城し、徳川軍を二度も撃退した難攻不落の城
+                として有名です。城は千曲川沿いの自然の地形を活かした造りになっており、現在は「上田城跡公園」として整備され、多くの観光客が訪れます。現在、城の本丸は残っていませんが、東虎口櫓門や堀、石垣
+                などが現存し、当時の雰囲気を感じることができます。
+              </p>
+            </div>
+          </div>
+
+          <div class="sight-content imgc bb3">
+            <div class="sight1">
+              <img src="./asset/image/nagano/misyaka.png" alt="" />
+              <h2>{　　御 釈 迦 池　　}</h2>
+              <p>
+                御釈迦池（みしゃかいけ） は、長野県長野市の戸隠エリアにある
+                標高約1,200mの高地に位置する神秘的な池です。周囲を森に囲まれ、四季折々の美しい風景を楽しむことができます。池の名前の由来は、かつてこの地に
+                お釈迦様の姿が映し出された
+                という伝説によるもの。静寂に包まれた湖面は、晴れた日には周囲の木々や空を鏡のように映し出し、幻想的な雰囲気を醸し出します。
+              </p>
+            </div>
+            <div class="sight2">
+              <img src="./asset/image/nagano/saru.png" alt="" />
+              <h2>{　　地　獄　谷　　}</h2>
+              <p>
+                地獄谷（地獄谷温泉・地獄谷野猿公苑）は、長野県山ノ内町に位置し、標高約850mにある
+                険しい渓谷と温泉が広がる自然豊かなエリア
+                です。地獄谷という名前の由来は、周囲に噴気が立ち込め、まるで地獄のような風景に見えたことにあります。この地域で最も有名なのが「地獄谷野猿公苑」で、ここでは世界で唯一、温泉に入る野生のニホンザル（スノーモンキー）を観察することができます。
+              </p>
+            </div>
+            <div class="sight3">
+              <img src="./asset/image/nagano/togakushi.png" alt="" />
+              <h2>{　　戸 隠 神 社　　}</h2>
+              <p>
+                戸隠神社 は、長野市の北西部に位置し、約2000年の歴史を持つ
+                神話と信仰の聖地 です。創建の由来は、日本神話に登場する
+                天岩戸伝説
+                に関連しており、天照大神が隠れた岩戸が戸隠の地に飛来し、神々が祀られたとされています。神社は
+                奥社・中社・宝光社・九頭龍社・火之御子社
+                の五社からなり、それぞれ異なるご利益があるとされています。特に
+                奥社への参道は樹齢400年を超える杉並木に囲まれ、神秘的な雰囲気が漂います。
+              </p>
+            </div>
+          </div>
+
+          <div class="sight-content imgd bb4">
+            <div class="sight1">
+              <img src="./asset/image/suwa/botti.png" alt="" />
+              <h2>{　　高ボッチ高原　　}</h2>
+              <p>
+                高ボッチ高原は、長野県塩尻市に位置する標高約1,600mの高原で、360度の大パノラマが広がる絶景スポットです。特に有名なのは、諏訪湖越しに富士山を望む壮大な景色で、天候に恵まれれば、南アルプスや八ヶ岳、北アルプスの山々も一望できます。また、雲海スポットとしても人気があり、早朝には幻想的な風景が広がることも。夜には、満天の星空と諏訪湖の夜景が美しく、天体観測や夜景撮影を楽しむ人々が訪れます。
+              </p>
+            </div>
+            <div class="sight2">
+              <img src="./asset/image/suwa/taisya.png" alt="" />
+              <h2>{　　諏 訪 大 社　　}</h2>
+              <p>
+                諏訪大社 は、長野県諏訪地方にある 日本最古級の神社の一つ
+                で、全国に約25,000社ある諏訪神社の総本社です。諏訪湖の周辺に
+                上社（本宮・前宮）と下社（秋宮・春宮） の 4つの社
+                が点在し、古くから信仰を集めてきました。主祭神は
+                建御名方神（たけみなかたのかみ）
+                で、狩猟や農耕、風、武勇の神として崇められています。
+              </p>
+            </div>
+            <div class="sight3">
+              <img src="./asset/image/suwa/kuri.png" alt="" />
+              <h2>{　　下 栗 の 里　　}</h2>
+              <p>
+                下栗の里 は、長野県飯田市の南アルプス山麓に位置する
+                「日本のチロル」とも称される絶景の里山
+                です。標高約1,000m～1,200mの急斜面に広がる集落で、まるで空に浮かぶような美しい風景が広がります。この地域は、山の斜面に張り付くように家々が建ち、最大傾斜38度
+                の土地で農業が行われています。主にジャガイモやソバの栽培が盛んで、素朴な田舎の風景が今も色濃く残っています。
+              </p>
+            </div>
+          </div>
+          <img class="kugiri0" src="./asset/image/other/kugiri.png" alt="" />
+        </div>
+      </section>
+
+      <!-- セクション: アクティビティ -->
+      <div class="active a-screen">
+        <div class="active-head">
+          <img
+            src="asset/image/matsumoto/activity.png"
+            alt=""
+            class="activity"
+          />
+          <img
+            src="./asset/image/matsumoto/active (1).png"
+            alt=""
+            class="active-image"
+          />
+        </div>
+
+        <div class="activity-section imga bb1">
+          <div class="active1">
+            <img src="./asset/image/matsumoto/nawate.png" alt="" />
+            <div class="explain">
+              <h2>伝統工芸品・地元の食べ物に触れよう！中町通り散歩</h2>
+              <p>
+                中町通り（なかまちどおり）は、江戸時代から続く歴史的な町並みが残る風情ある通りで、「蔵の街」として知られています。白と黒のなまこ壁が特徴的な建物が立ち並び、城下町の雰囲気を色濃く感じられるエリアです。松本城から徒歩圏内にあり、観光や散策にぴったりのスポットとなっています。
+              </p>
+              <a href="https://nakamachi.org/" target="_blank" class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active2">
+            <img src="./asset/image/matsumoto/kisosituki.png" alt="" />
+            <div class="explain">
+              <h2>
+                「木曽漆器」の博物館で絵付け体験！自分だけの漆箸を作ろう！
+              </h2>
+              <p>
+                木曽漆器館は、国の重要有形民俗文化財・木曽漆器の博物館です。木曽漆器の製作用具や人間国宝の作品、漆製の長野冬季オリンピック入賞メダルなど、木曽漆器の産地ならではの資料・作品を展示しています。そんな木曽漆器館の友の会「漆ゆう会」では、漆箸に絵付けを施すものづくり体験を開催中です。
+              </p>
+              <a
+                href="https://tokimeguri.jp/modelplan/kisohirasawa/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active3">
+            <img src="./asset/image/matsumoto/kisosituki (1).png" alt="" />
+            <div class="explain">
+              <h2>
+                スノーシュー・トレッキング！雪道をザクザク、冒険に出かけよう！
+              </h2>
+              <p>
+                NORTHSTAR outdoor
+                adventures（ノーススター・アウトドア・アドベンチャー）は、スノーシューを履いてトレッキングツアーを開催しています。乗鞍高原の壮大なロケーションの中、じっくりウォーキングを楽しみましょう。スノーシューはスキー板よりも歩きやすく、初心者も体験しやすいアクティビティです。
+              </p>
+              <a
+                href="https://www.jalan.net/kankou/spt_guide000000223863/?screenId=OUW1701"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-section imgb bb2">
+          <div class="active1">
+            <img src="./asset/image/karuizawa/shop (1).png" alt="" />
+            <div class="explain">
+              <h2>軽井沢アウトレットでお買い物を楽しもう！</h2>
+              <p>
+                軽井沢・プリンスショッピングプラザ
+                は、日本有数のリゾート型アウトレットモールで、軽井沢駅から徒歩圏内に位置する人気のショッピングスポットです。広大な敷地内には、国内外のブランドショップやアウトドア用品、雑貨、食品など多彩な店舗が並び、ショッピングを満喫できます。
+              </p>
+              <a
+                href="https://www.karuizawa-psp.jp/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active2">
+            <img src="./asset/image/karuizawa/shop (2).png" alt="" />
+            <div class="explain">
+              <h2>信州ハム軽井沢工房で手作りウインナー体験！</h2>
+              <p>
+                信州ハム軽井沢工房 は、軽井沢にある
+                ハム・ソーセージの老舗「信州ハム」直営の体験施設
+                で、本格的な手作りウインナー作りを楽しめる人気スポットです。体験では、自分で腸詰めを行い、ひねりを加えてソーセージの形に仕上げる工程を体験できます。出来上がったウインナーはその場で茹でて試食でき、自分で作った出来たての味は格別！また、お土産用に持ち帰ることもできます。
+              </p>
+              <a
+                href="https://www.shinshuham.co.jp/atelier_2/handmade/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active3">
+            <img src="./asset/image/karuizawa/shop (3).png" alt="" />
+            <div class="explain">
+              <h2>軽井沢銀座通りで食べ歩きを楽しもう！</h2>
+              <p>
+                軽井沢銀座通り
+                は、軽井沢を代表する人気観光スポットのひとつで、旧軽井沢エリアに位置する歴史あるショッピングストリートです。明治時代に外国人避暑客の別荘文化とともに発展したエリア
+                で、現在もそのレトロでおしゃれな雰囲気を残しています。通りには、老舗のパン屋やカフェ、スイーツ店、雑貨屋、アンティークショップなど個性的なお店が並び、ショッピングやグルメを楽しむのにぴったり。
+              </p>
+              <a
+                href="https://karuizawa-kankokyokai.jp/spot/30092/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-section imgc bb3">
+          <div class="active1">
+            <img src="./asset/image/nagano/sunobo.png" alt="" />
+            <div class="explain">
+              <h2>大自然の絶景と極上の雪を満喫！白馬スキー場</h2>
+              <p>
+                白馬スキー場（白馬エリア）は、長野県北部に位置し、日本屈指のスノーリゾートとして知られるスキーエリアです。1998年の長野冬季オリンピックの会場にもなったこのエリアは、標高の高い山々と豊富な積雪量を誇り、国内外のスキーヤー・スノーボーダーに人気があります。初心者から上級者まで幅広いレベルに対応し、ふわふわのパウダースノーと雄大な山々の絶景が魅力です。
+              </p>
+              <a
+                href="https://www.hakubavalley.com/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active2">
+            <img src="./asset/image/nagano/ski (1).png" alt="" />
+            <div class="explain">
+              <h2>大自然の中でのアドベンチャーを楽しもう！</h2>
+              <p>
+                長野市の飯綱高原に位置し、長野市中心部や善光寺から車で約25分とアクセス良好です。​大座法師池の上空を滑る全長150m以上のジップスライドが4本あり、爽快感抜群の体験ができます。​2023年6月にはキャノピーコースがリニューアルオープンし、身長110cmから参加可能となりました。​周辺にはキャンプ場や温泉施設も充実しており、家族連れやグループで1日中楽しめるスポットです。
+              </p>
+              <a
+                href="https://foret-aventure.jp/park/fa-nagano/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active3">
+            <img src="./asset/image/nagano/ski (2).png" alt="" />
+            <div class="explain">
+              <h2>大自然の下でダイナミックな空中飛行！</h2>
+              <p>
+                飯山市の斑尾高原には、全11本のジップラインコースが設けられており、約2時間のツアーでそのうち6本を体験できます。
+                ​各コースは、スリル満点の高さや美しい景観を楽しめるものなど、多彩なバリエーションが揃っています。
+                ​ツアーはガイドが同行し、最大10名程度のグループで進行されるため、初めての方やお子様連れでも安心して参加できます。
+              </p>
+              <a
+                href="https://www.iiyama-ouendan.net/experience/zipline/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-section imgd bb4">
+          <div class="active1">
+            <img src="./asset/image/suwa/ski.png" alt="" />
+            <div class="explain">
+              <h2>雄大な湖を堪能しよう！カヤック体験！</h2>
+              <p>
+                カヤック体験は、四季折々の美しい風景が広がる諏訪湖を舞台に、初心者から上級者まで楽しめる安全かつ魅力的なアクティビティです。体験前には専門のインストラクターによる事前説明や安全指導が行われ、レンタル設備も充実しているため、初めての方でも安心してカヤック操作を学ぶことができます。カヤックに乗って湖上を進むと、静かな水面に映る山々や水鳥、野生生物など、自然との一体感を存分に味わうことができ、心身ともにリフレッシュできる点が大きな魅力です。
+              </p>
+              <a
+                href="https://www.suwako-kayak.com/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active2">
+            <img src="./asset/image/suwa/ski (3).png" alt="" />
+            <div class="explain">
+              <h2>クリスタルボール国内最大のガラス玉を見に行こう！</h2>
+              <p>
+                SUWAガラスの里では、伝統の技術と現代的なデザインが融合したガラス製品の製作や展示が行われており、来訪者は工房見学やガラス吹き体験を通して、ガラスが形作られていく過程やその美しさを実際に感じることができます。また、季節ごとに様々なイベントやワークショップが開催され、家族連れや観光客、アート愛好家など幅広い層に支持されています。
+              </p>
+              <a
+                href="https://www.garasunosato.com/"
+                target="_blank"
+                class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+          <div class="active3">
+            <img src="./asset/image/suwa/ski (4).png" alt="" />
+            <div class="explain">
+              <h2>天竜川和船下り。伝統の和船で天竜川を下ろう！</h2>
+              <p>
+                天竜川和船下りは、伝統の和船に乗り、歴史と自然が調和する天竜川の美しい風景をゆったりと楽しむことができるアクティビティです。和船は、古来から伝わる技術と趣を感じさせる伝統工芸品であり、その独特な造りが現代でも息づいています。体験中は、川沿いの緑豊かな景色や歴史的な背景に触れながら、のんびりと船を進めることで、本の伝統文化を肌で感じる貴重なひとときを過ごすことができます。
+              </p>
+              <a href="https://mr-tenryu.com/" target="_blank" class="btn_17"
+                >詳しく見る</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img class="kugiri3" src="./asset/image/other/kugiri.png" alt="" />
+
+      <!-- セクション3: アクセス情報 -->
+      <section class="section3">
+        <div class="access-title">
+          <img src="./asset/image/access/access.png" alt="aa" id="access" />
+          <h2>全国の主要都市からのアクセス情報を掲載しています。</h2>
+        </div>
+        <div class="access-circle">
+          <a
+            href="https://www.navitime.co.jp/route/comparison?orvName=%E6%9D%B1%E4%BA%AC&dnvName=%E9%95%B7%E9%87%8E&orvNodeCode=00006668&dnvNodeCode=00006275"
+            target="_blank"
+          >
+            <img
+              src="./asset/image/access/tokyo.png"
+              alt=""
+              class="circle-img tokyo"
+            />
+          </a>
+          <a
+            href="https://www.navitime.co.jp/transfer/searchlist?orvStationName=%E5%A4%A7%E9%98%AA&orvStationCode=00005602&dnvStationName=%E9%95%B7%E9%87%8E&dnvStationCode=00006275&defaultCondition=0"
+            target="_blank"
+          >
+            <img
+              src="./asset/image/access/osaka.png"
+              alt=""
+              class="circle-img osaka"
+            />
+          </a>
+          <a
+            href="https://www.navitime.co.jp/route/comparison?orvName=%E6%9C%AD%E5%B9%8C&dnvName=%E9%95%B7%E9%87%8E&orvNodeCode=00002928&dnvNodeCode=00006275"
+            target="_blank"
+          >
+            <img
+              src="./asset/image/access/hokkaido.png"
+              alt=""
+              class="circle-img hakkaido"
+            />
+          </a>
+          <a
+            href="https://www.navitime.co.jp/transfer/searchlist?orvStationName=%E5%90%8D%E5%8F%A4%E5%B1%8B&orvStationCode=00008576&dnvStationName=%E9%95%B7%E9%87%8E&dnvStationCode=00006275&defaultCondition=0"
+            target="_blank"
+          >
+            <img
+              src="./asset/image/access/nagoya.png"
+              alt=""
+              class="circle-img nagoya"
+            />
+          </a>
+          <a
+            href="https://www.navitime.co.jp/route/comparison?orvName=%E7%A6%8F%E5%B2%A1%E7%A9%BA%E6%B8%AF&dnvName=%E9%95%B7%E9%87%8E&orvNodeCode=00008012&dnvNodeCode=00006275"
+            target="_blank"
+          >
+            <img
+              src="./asset/image/access/hukuoka.png"
+              alt=""
+              class="circle-img hukuoka"
+            />
+          </a>
+        </div>
+        <img class="kugiri4" src="./asset/image/other/kugiri.png" alt="" />
+      </section>
+
+      <!-- セクション4: 写真紹介 -->
+      <section class="section4">
+        <div class="access-title">
+          <img
+            src="./asset/image/photo/photoinformation.png"
+            alt=""
+            id="photo"
+          />
+          <h2>長野県の美しい写真を掲載しています。</h2>
+        </div>
+
+        <div class="slider p-0">
+          <div class="slider_loop slider pb-0">
+            <ul class="slider_loop_inner">
+              <li>
+                <a
+                  href="https://www.kamikochi.or.jp/"
+                  class="a10 a11"
+                  target="_blank"
+                >
+                  <img class="a111" src="./asset/image/photo/kamikouti.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://jigokudani-yaenkoen.co.jp/"
+                  class="a10 a13"
+                  target="_blank"
+                >
+                  <img class="a111" src="./asset/image/photo/saru.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.matsumoto-castle.jp/"
+                  class="a10 a14"
+                  target="_blank"
+                >
+                  <img class="a111" src="./asset/image/photo/siro.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.zenkoji.jp/"
+                  class="a10 a15"
+                  target="_blank"
+                >
+                  <img src="./asset/image/photo/tera.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tokimeguri.jp/guide/takabotchi/"
+                  class="a10 a16"
+                  target="_blank"
+                >
+                  <img src="./asset/image/photo/yama.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.karuizawachurch.org/"
+                  class="a10 a17"
+                  target="_blank"
+                >
+                  <img src="./asset/image/photo/kyokai.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.suwa-tourism.jp/gosuwa/tourism/%E5%BE%A1%E5%B0%84%E9%B9%BF%E6%B1%A0/"
+                  class="a10 a18"
+                  target="_blank"
+                >
+                  <img src="./asset/image/photo/ike.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.togakushi-jinja.jp/"
+                  class="a10 a19"
+                  target="_blank"
+                >
+                  <img src="./asset/image/photo/jinja.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.town.karuizawa.lg.jp/www/sp/contents/1001000000697/index.html"
+                  class="a10 a20"
+                >
+                  <img src="./asset/image/photo/taki.png" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://www.utsukushigaharakogen.jp/"
+                  class="a10 a21"
+                  target="_blank"
+                >
+                  <img src="./asset/image/photo/usi.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img class="kugiri5" src="./asset/image/other/kugiri.png" alt="" />
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <div class="footer-header">
+        <img src="./asset/image/other/logo1.png" alt="" />
+      </div>
+      <div class="footer-inner">
+        <p><small>&copy;</small>shinshu</p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+    ></script>
+    <!-- Slick Carousel JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- メインJS -->
+    <script src="./asset/js/app.js"></script>
+  </body>
+</html>
