@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loopSetUp();
     loop();
   });
-  // Resize Event
+
   var resizetimer = false;
   $(window).resize(function () {
     if (resizetimer !== false) {
@@ -101,8 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < 4; i++) {
     $(".slider_loop_inner").append($(".slider_loop_inner li").clone(true));
   }
-
-  // loop
   function loopSetUp() {
     windowWidth = $(window).width();
     switch (true) {
